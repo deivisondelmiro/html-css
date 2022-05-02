@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(198, 198, 233);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(26, 24, 24);
+}
+
+h3 {
+    color: blue;
+    text-align: center;
+}
+
+h4 {
+    color: gray;
+    font-size: 1em;
+    text-align: center;
+}
+
+h4#titulo_modulo {
+    color: blue;
+}
+
+p#informações {
+    color: red;
+    text-align: center;
+}
+
+h4#conclusao {
+    color: gray;
+}
+
+h4#voltar, h4#todos_estilos, h4#interno, h4#externo {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}

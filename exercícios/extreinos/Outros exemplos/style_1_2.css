@@ -1,0 +1,17 @@
+p#validacao {
+    color: gray;
+    text-align: center
+}
+
+h2 {
+    color: black;
+}
+
+p#voltar, p#interno, p#externo, p#todos_estilos {
+    color: blue;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
