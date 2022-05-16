@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades de background</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        div.caixa_fora {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: gray;
+            background-image: url('../../ex022/imagens/target001.png');
+            background-position: center;
+            margin: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        div.caixa_dentro {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background-color: black;
+            background-image: url('../../ex022/imagens/wallpaper003.jpg');
+            background-repeat: no-repeat;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        div#caixa01 {
+            background-position: center;
+            left: 50%;
+            top: 50%;
+            /*transform: translate(-50%, -50%);*/
+        }
+
+        div#caixa02 {
+            background-position: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        div#caixa03 {
+            background-position: right bottom;
+            left: 20%;
+            top: 20%;
+            transform: translate(15%, 15%);
+        }
+
+        div#caixa04 {
+            background-position: center left;
+            transform: translate(80%, 20%);
+        }
+
+        div#caixa05 {
+            background-position: top right;
+            left: -10%;
+            top: -15%;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa_fora" id="caixa">
+        <div class="caixa_dentro" id="caixa01">
+        </div>
+    </div>
+
+    <div class="caixa_fora">
+        <div class="caixa_dentro" id="caixa02">
+        </div>
+    </div>
+
+    <div class="caixa_fora">
+        <div class="caixa_dentro" id="caixa03">
+        </div>
+    </div>
+
+    <div class="caixa_fora">
+        <div class="caixa_dentro" id="caixa04">
+        </div>
+    </div>
+
+    <div class="caixa_fora">
+        <div class="caixa_dentro" id="caixa05">
+        </div>
+    </div>
+</body>
+</html>
