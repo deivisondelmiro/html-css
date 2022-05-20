@@ -27,6 +27,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--cor05);
 }
 
 ul {
@@ -46,15 +47,24 @@ header {
 }
 
 nav ul {
+    background-color: var(--cor01);
+    box-shadow: 0px 0.1px 15px rgba(0, 0, 0, 0.342);
+    width: 100vw;
     display: flex;
     position: fixed;
+    top: 0;
+    align-items: center;
+    z-index: 100;
     font-family: var(--font01);
-    font-weight: bold;
     color: black;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 15rem;
-    padding: 25px 8px 5px 8px;
+    justify-content: center;
+    padding: 15px 8px 10px 0px;
+    gap: 3.2rem;
+}
+
+nav li:hover {
+    color: white;
 }
 
 header nav > a {
@@ -71,18 +81,23 @@ header nav > a:hover {
 header h1 {
     display: inline-block;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.815);
+    color: rgba(255, 255, 255, 0.83);
     font-family: Arial;
     font-size: 3.5rem;
     font-weight: bold;
     text-align: left;
     margin: 9rem 0rem 0rem 6rem;
-    padding: 2rem 0rem 1rem 0rem;
+    padding: 7rem 0rem 1rem 0rem;
+}
+
+header h1 a {
+    color: rgba(255, 255, 255, 0.867);
 }
 
 header p {
     display: inline-block;
     padding: 0rem 0rem 0rem 6rem;
+    color: rgba(255, 255, 255, 0.83);
 }
 
 section {
@@ -106,16 +121,24 @@ main h2 {
 
 article {
     display: relative;
+    padding: 0px 0px 120px 0px;
 }
 
 article h1 {
     font-size: 2.5rem;
     color: var(--cor01);
     text-align: left;
-    padding: 0px  0px 25px 55px;
+}
+
+article h1, article h2 {
+    margin: 0px  0px 25px 115px;
+    padding-left: 15px;
+    background-image:   linear-gradient( to right, var(--cor05) 50%, var(--cor03) 75%);
+    border-radius: 5px;
 }
 
 p.paragrafo {
+    color: rgba(0, 0, 0, 0.787);
     width: 50vw;
     font-size: 1.3rem;
     font-weight: 500;
@@ -125,12 +148,31 @@ p.paragrafo {
     text-indent: 60px;
 }
 
-#texto_1, #texto_2 {
+#texto_1, #texto_2, #texto_3 {
     padding: 0px 0px 0px 55px;
+}
+
+#texto_4, #texto_5, #texto_6 {
+    padding: 0px 0px 0px 590px;
 }
 
 img {
     position: absolute;
     left: 600px;
-    top: 800px;
+    top: 765px;
+}
+
+#imagem_2 {
+    position: absolute;
+    left: -210px;
+    top: 1500px;
+}
+
+footer, footer a {
+    font-family: var(--font05);
+    background-color: var(--cor01);
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    color: var(--cor05);
+    font-size: 1.2rem;
 }
