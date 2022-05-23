@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-brr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 750px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            background-color: black;
+        }
+
+        thead, tfoot {
+            background-color: rgba(0, 0, 0, 0.787);
+            color: white;
+        }
+
+        /* tbody > tr:nth-child(odd) {
+            background-color: rgba(211, 211, 211, 0.749);
+        } */
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de informações para treinamento</caption>
+        <thead>
+            <tr>
+                <th scope="col">Primeira Info</th>
+                <th scope="col">Segunda Info</th>
+                <th scope="col">Terceira Info</th>
+                <th scope="col">Quarta Info</th>
+                <th scope="col">Quinta Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td colspan="2">3</td>
+                <td>4</td>
+                <td rowspan="2">5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="2">2</td>
+                <td>3</td>
+                <td rowspan="2">4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>3</td>
+                <td rowspan="2">5</td>
+            </tr>
+            <tr>
+                <td colspan="2">2</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td colspan="2">1</td>
+                <td>3</td>
+                <td rowspan="2">4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td rowspan="2">5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td colspan="2">1</td>
+                <td>3</td>
+                <td rowspan="2">4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="2">2</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td colspan="2">1</td>
+                <td rowspan="2">3</td>
+                <td colspan="2">4</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td>4</td>
+                <td rowspan="2">5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">3</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <td><strong>0</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong>0</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
